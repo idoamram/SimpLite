@@ -35,6 +35,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return databaseInstance;
     }
 
+    public static void closeIfExist() {
+        if (helperInstance != null)
+            helperInstance.close();
+    }
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         if (config != null) config.beforeOnCreate(context);
