@@ -5,7 +5,7 @@
 
 ###1. Add a dependency to your build.gradle file
 ```
-compile 'com.simplite:simplite-orm:0.9.2'
+compile 'com.simplite:simplite-orm:0.9.4'
 ```
 
 ###2. Create an Entity class
