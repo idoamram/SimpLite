@@ -10,7 +10,5 @@ import java.lang.annotation.Target;
 public @interface PrimaryKey {
     String columnName();
 
-    boolean isAutoIncrement() default false;
-
     String[] options() default {};
 }

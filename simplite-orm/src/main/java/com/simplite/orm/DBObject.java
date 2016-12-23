@@ -7,8 +7,8 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import com.simplite.orm.annotations.Column;
 import com.simplite.orm.annotations.Entity;
-import com.simplite.orm.annotations.ForeignKeyEntity;
-import com.simplite.orm.annotations.ForeignKeyEntityArray;
+import com.simplite.orm.annotations.ForeignKey;
+import com.simplite.orm.annotations.ForeignKeyArray;
 import com.simplite.orm.annotations.PrimaryKey;
 import com.simplite.orm.entities.ColumnData;
 import com.simplite.orm.entities.Condition;
@@ -108,10 +108,10 @@ public abstract class DBObject {
                 primaryKey = new PkData(field, field.getAnnotation(PrimaryKey.class), getSetter(field));
             } else if (field.isAnnotationPresent(Column.class)) {
                 mColumns.add(new ColumnData(field, getSetter(field), field.getAnnotation(Column.class)));
-            } else if (field.isAnnotationPresent(ForeignKeyEntity.class)) {
-                mForeignKeys.add(new FkData(field, field.getAnnotation(ForeignKeyEntity.class), getSetter(field)));
-            } else if (field.isAnnotationPresent(ForeignKeyEntityArray.class)) {
-                mArrayForeignKeys.add(new FkData(field, field.getAnnotation(ForeignKeyEntityArray.class), getSetter(field)));
+            } else if (field.isAnnotationPresent(ForeignKey.class)) {
+                mForeignKeys.add(new FkData(field, field.getAnnotation(ForeignKey.class), getSetter(field)));
+            } else if (field.isAnnotationPresent(ForeignKeyArray.class)) {
+                mArrayForeignKeys.add(new FkData(field, field.getAnnotation(ForeignKeyArray.class), getSetter(field)));
             }
         }
     }

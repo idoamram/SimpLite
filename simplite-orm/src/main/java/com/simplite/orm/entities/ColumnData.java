@@ -1,8 +1,8 @@
 package com.simplite.orm.entities;
 
 import com.simplite.orm.annotations.Column;
-import com.simplite.orm.annotations.ForeignKeyEntity;
-import com.simplite.orm.annotations.ForeignKeyEntityArray;
+import com.simplite.orm.annotations.ForeignKey;
+import com.simplite.orm.annotations.ForeignKeyArray;
 import com.simplite.orm.annotations.PrimaryKey;
 
 import java.lang.reflect.Field;
@@ -29,14 +29,14 @@ public class ColumnData {
         this.options = annotation.options();
     }
 
-    ColumnData(Field field, Method setter, ForeignKeyEntity annotation) {
+    ColumnData(Field field, Method setter, ForeignKey annotation) {
         this.name = annotation.fkColumnName();
         this.field = field;
         this.setter = setter;
         this.options = annotation.options();
     }
 
-    ColumnData(Field field, Method setter, ForeignKeyEntityArray annotation) {
+    ColumnData(Field field, Method setter, ForeignKeyArray annotation) {
         this.name = annotation.fkColumnName();
         this.field = field;
         this.setter = setter;

@@ -7,9 +7,10 @@ import java.util.ArrayList;
 
 public final class ManifestProvider {
 
-    private static final String META_DATABASE_NAME = "DATABASE_NAME";
     private static final String DEFAULT_DATABASE_NAME = "default_db";
     private static final int DEFAULT_DATABASE_VERSION = 1;
+
+    private static final String META_DATABASE_NAME = "DATABASE_NAME";
     private static final String META_DATABASE_VERSION = "DATABASE_VERSION";
     private static final String META_ENTITIES_CLASSES_NAME = "ENTITIES_CLASSES_NAME";
     private static final String META_CONFIGURATION_CLASS = "CONFIG_CLASS";

@@ -126,7 +126,35 @@ fkColumnName | The name of the column in the **foreign table**
 entityClass | The **foreign entity** class
 options | Options to add to the column, like AUTOINCREMENT or UNIQUE
 
+### CRUD
+```
+Person person = new Person(context);
+```
+#####Create
+```
+person.create()
+```
+#####Delete
+```
+person.delete()
+```
+#####Update
+```
+person.save()
+```
+#####Read
+* **findAll**
+* **findOne**
+* **findAllByColumn**
+* **query**
+* **rawQuery**
+* **count**
+* **countByColumn**
+* **getAverageByColumn**
 
+#####CRUD in background
+Each CRUD method have another method that called [methodName]+"InBackground"(For example: createInBackground), that execute the original method
+in an AsyncTask.
 
 ###Please feel more than FREE to contact me and give a feedback, i want to improve the library and make it better for you.
 ###ido.movieditor@gmail.com
