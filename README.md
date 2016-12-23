@@ -144,8 +144,9 @@ person.save()
 ```
 #####Read
 * **findAll**
-* **findOne**
 * **findAllByColumn**
+* **findOne**
+* **findById**
 * **query**
 * **rawQuery**
 * **count**
