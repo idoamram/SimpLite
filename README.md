@@ -154,17 +154,22 @@ person.save()
 * **getAverageByColumn**
 
 #####CRUD in background
-
-###SQL helpers
-#####**Return string** that is a CREATE TABLE command for a class.
-```getCreateTableCommand```
-#####**Return string** that is an INSERT command for a class instance, including the current fields values.
-```getInsertCommand```
-#####**Return string** that is an UPDATE command for a class instance, including the current fields values.
-```getUpdateCommand```
-
 Each CRUD method have another method that called [methodName]+"InBackground"(For example: createInBackground), that execute the original method
 in an AsyncTask.
+
+###SQL helpers
+**Return string** that is a CREATE TABLE command for a class.
+```
+getCreateTableCommand
+```
+**Return string** that is an INSERT command for a class instance, including the current fields values.
+```
+getInsertCommand
+```
+**Return string** that is an UPDATE command for a class instance, including the current fields values.
+```
+getUpdateCommand
+```
 
 ###Please feel more than FREE to contact me and give a feedback, i want to improve the library and make it better for you.
 ###ido.movieditor@gmail.com
