@@ -9,8 +9,6 @@ import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-//    private static final String DATABASE_NAME = "marshal_local_db";
-//    public static final int DATABASE_VERSION = 5;
     private static DatabaseHelper helperInstance;
     private static SQLiteDatabase databaseInstance;
 
