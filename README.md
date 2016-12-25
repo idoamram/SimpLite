@@ -154,6 +154,12 @@ person.save()
 * **getAverageByColumn**
 
 #####CRUD in background
+
+###SQL helpers
+` getCreateTableCommand ` - **Return string** that is a CREATE TABLE command for a class.
+` getInsertCommand ` - **Return string** that is an INSERT command for a class instance, including the current fields values.
+` getUpdateCommand ` - **Return string** that is an UPDATE command for a class instance, including the current fields values.
+
 Each CRUD method have another method that called [methodName]+"InBackground"(For example: createInBackground), that execute the original method
 in an AsyncTask.
 
