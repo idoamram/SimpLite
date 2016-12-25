@@ -161,7 +161,7 @@ person.save()
 #####**Return string** that is an INSERT command for a class instance, including the current fields values.
 ```getInsertCommand```
 #####**Return string** that is an UPDATE command for a class instance, including the current fields values.
-```getUpdateCommand
+```getUpdateCommand```
 
 Each CRUD method have another method that called [methodName]+"InBackground"(For example: createInBackground), that execute the original method
 in an AsyncTask.
